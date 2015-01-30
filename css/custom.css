@@ -1,0 +1,42 @@
+/* Variables */
+body {
+  background-color: #6dc9ae;
+  font-family: Helvetica, sans-serif;
+  font-size: 100%;
+  text-align: center; }
+
+h2 {
+  padding-top: 3%;
+  padding-bottom: 2%; }
+
+#cToF, #fToC {
+  width: 30%;
+  background-color: #9ce2cd;
+  margin: 0 auto;
+  padding: 1%;
+  border: dotted 1px; }
+
+#fToC {
+  margin-top: 2%; }
+
+input {
+  width: 184px;
+  height: 25px;
+  border: 3px inset #CCA5C3;
+  outline: 0;
+  text-align: center;
+  font-size: 90%; }
+
+button {
+  width: 192px;
+  height: 32px;
+  font-size: 90%;
+  background-color: #fdd7df; }
+
+button:hover {
+  background-color: #f9acbd; }
+
+#theResultF, #theResultC {
+  margin-top: 4%;
+  margin-bottom: 3%;
+  font-size: 100%; }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Temperature converter - Celcius Fahrenheit - Fahrenheit Celcius</title>
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body>
+
+	<h2>Temperature converter</h2>
+
+	<div id="cToF">
+	  
+	  <h3>C to F</h3>
+	  <input id="celcius" type="number" placeholder="Enter a temperature in C"/>
+
+	  <button onclick="convertToF()">Convert to Fahrenheit</button><br>
+	  <div id="theResultF"></div>
+
+	</div>  
+
+	<div id="fToC">
+	  
+	  <h3>F to C</h3>
+	  <input id="fahr" type="number" placeholder="Enter a temperature in F"/>
+
+	  <button onclick="convertToC()">Convert to Celcius</button><br>
+	  <div id="theResultC"></div>
+
+	</div>  
+
+</body>
+
+<script src="convert.js"></script>
+</html>

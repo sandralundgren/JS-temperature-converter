@@ -1,0 +1,73 @@
+/* Variables */
+
+$backgroundColor: #6dc9ae;
+$accentColor: #9ce2cd;
+$converterWidth: 30%;
+
+// Buttons
+
+$buttonColor: #fdd7df;
+$hoverColor: #f9acbd;
+
+// Fonts 
+
+@mixin fontSize($size) {
+    font-size: $size; 
+}
+
+// Input styling
+
+@mixin inputBorder($size, $color) {
+    border: $size inset $color; 
+}
+
+
+body {
+    background-color: $backgroundColor;
+    font-family: Helvetica, sans-serif;
+    @include fontSize(100%);
+    text-align: center;
+}
+
+h2 {  
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+#cToF, #fToC {
+    width: $converterWidth;
+    background-color: $accentColor;
+    margin: 0 auto;
+    padding: 1%;
+    border: dotted 1px;
+}
+
+#fToC {  
+    margin-top: 2%;
+}
+
+input {
+    width: 184px;
+    height: 25px;
+    @include inputBorder(3px, #CCA5C3); 
+    outline: 0;
+    text-align: center;
+    @include fontSize(90%);
+}
+
+button {
+    width: 192px;
+    height: 32px;
+    @include fontSize(90%);
+    background-color: $buttonColor;
+}
+    button:hover {
+        background-color: $hoverColor;
+    }
+
+#theResultF, #theResultC {  
+    margin-top: 4%;
+    margin-bottom: 3%;
+    @include fontSize(100%); 
+}
+
